@@ -18,3 +18,25 @@
 	background-attachment: fixed;
 }
 /*end - Parallax effect  */
+
+/*end - Button  */
+.btn{
+    display: inline-flex;
+    align-items: center;
+    height: 54px;
+    padding: 0 44px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.btn.btn-success{
+    color: #fff;
+    background-color: var(--color-aqua);
+}
+.btn.btn-success:hover{
+    background-color: var(--color-aqua-d);
+}
+/*end - Button  */
