@@ -40,3 +40,18 @@
     background-color: var(--color-aqua-d);
 }
 /*end - Button  */
+
+/*Detect touch screen  */
+html.touch div {
+    width: 480px;
+}
+
+html.no-touch div {
+    width: auto;
+}
+/*
+And Javascript (jQuery example):
+$('html.touch #popup').hide();
+*/
+/*end - Detect touch screen  */
+
