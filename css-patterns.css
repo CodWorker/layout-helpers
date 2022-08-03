@@ -55,3 +55,30 @@ $('html.touch #popup').hide();
 */
 /*end - Detect touch screen  */
 
+/* Close sign*/
+#info-block-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:4px;
+    right: 40px;
+}
+#info-block-close::after, #info-block-close::before{
+    content: '';
+    position: absolute;
+    left:0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--base-text-color);
+}
+#info-block-close::after{
+    top:15px;
+    transform: rotate(45deg);
+
+}
+#info-block-close::before{
+    bottom:13px;
+    transform: rotate(-45deg);
+}
+/* Close sign - end*/
+
