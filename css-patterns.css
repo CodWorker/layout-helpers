@@ -1,4 +1,4 @@
-/*Parallax effect  */
+/* Parallax effect  */
 .site-hero{
 	height: 850px;
 	width: 100%;
@@ -17,9 +17,9 @@
 	overflow: hidden;
 	background-attachment: fixed;
 }
-/*end - Parallax effect  */
+/* end - Parallax effect  */
 
-/*end - Button  */
+/* Button  */
 .btn{
     display: inline-flex;
     align-items: center;
@@ -39,7 +39,7 @@
 .btn.btn-success:hover{
     background-color: var(--color-aqua-d);
 }
-/*end - Button  */
+/* end - Button  */
 
 /*Detect touch screen  */
 html.touch div {
