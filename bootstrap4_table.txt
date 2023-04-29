@@ -1,0 +1,61 @@
+//CSS
+	.deal-comment {
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 100ch;
+	}
+
+	.js-log-data {
+		cursor: pointer;
+	}
+
+	@media (max-width: 1200px) {
+		#grid .table{
+			display: block;
+			max-width: -moz-fit-content;
+			max-width: fit-content;
+			margin: 0 auto;
+			overflow-x: auto;
+			white-space: nowrap;
+		}
+	}
+
+	/* lg */
+	@media (min-width: 992px) {
+		#grid .deal-comment {
+			max-width: auto;
+		}
+	}
+
+	/* xl */
+	@media (min-width: 1200px) {
+		#grid .deal-comment {
+			max-width: 300px;
+		}
+	}
+
+	@media (min-width: 1400px) {
+		#grid  .deal-comment {
+			max-width: 400px;
+		}
+	}
+  
+  //JQUERY
+ $( document ).on( 'click', '.js-log-data', function (e) {
+	    e.preventDefault();
+	    commentCell = $($(this).children()[0]);
+	    commentCell.hasClass('deal-comment') ? commentCell.removeClass('deal-comment') : commentCell.addClass('deal-comment');
+	} );
+  
+  //HTML
+<td class="js-log-data"><pre class="deal-comment text-white">{
+    "type": "Authentication of user #1( Dmitrii Tishkov)"
+}</pre>
+</td>
+
+//PHP
+//$data->data - json objact
+'<pre class="deal-comment">' . json_encode( json_decode( $data->data, true ), JSON_PRETTY_PRINT ) . '</pre>';
+  
